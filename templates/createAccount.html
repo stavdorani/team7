@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="../static/Log-in-JS.js"> </script>
+    <link rel="stylesheet" href="../static/CSSproject.css">
+    <!-- יצירת דף רפונסיבי -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- לוגו הדף -->
+    <div class="AppLogo">
+        <h1>say WHAT?<br><span>SAY RIDE</span> </h1></div>
+
+
+    <!-- מילוי הפרטים האישיים בדף הכניסה -->
+    <!-- מכריח למלא את הפרטים החסרים -->
+    <form action="action_page.php" method="post">
+
+        <div class="container">
+
+            <div class="header">ברוכים המצטרפים עוד רגע והטרמפ מוכן</div><br>
+
+        <label for="uname"><b>שם משתמש</b></label><br>
+        <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+        <label for="email"><b>כתובת מייל</b></label><br>
+        <input type="email" id="fname" name="name" placeholder="כתוב את כתובת המייל שלך"><br>
+
+        <label for="phone"><b>מספר טלפון</b></label><br>
+        <input type="text" id="fname" name="name" placeholder=""><br>
+
+        <label for="date"><b>תאריך לידה</b></label><br>
+        <input type="text" id="fname" name="name" placeholder=""><br>
+
+        <label for="psw"><b>סיסמה</b></label><br>
+        <input type="password" placeholder="הקלד כאן" id="psw" name="psw" required><br><br>
+        <input type="checkbox" onclick="myFunction()">הצג סיסמה<br><br>
+
+        <label for="psw"><b>העלה תמונה תעודת סטודנט</b></label><br>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename"><br><br>
+            <button type="submit"> צור חשבון</button><br>
+        </form>
+        </div>
+    </form>
+
+    
+
+</body>
+
+</html>

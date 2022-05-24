@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/CSSproject.css">
+
+      <!-- יצירת דף רפונסיבי -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+    <form action="action_page.php" method="post">
+
+        <div class="container">
+            <div class="header">!בואו נמצא לך טרמפ</div><br><br>
+            
+            <label for="date"><b>תאריך טרמפ רצוי</b></label><br>
+            <input type="date"  name="date" required><br><br>
+
+            <label for="OriginAddress"><b>כתובת מוצא</b></label><br>
+            <input type="text" placeholder="Enter Address" id="OriginAddress" name="OriginAddress" required><br><br>
+           
+            <label for="destination"><b>כתובת יעד</b></label><br>
+            <input type="text" placeholder="Enter Address"  id="destination" name="destination" required><br><br>
+
+            <label for="leavingTime"><b>שעת יציאה</b></label><br>
+            <input type="time" id="leavingTime" name="leavingTime" ><br><br>
+           
+            <label for="numPassengers"><b>כתובת יעד</b></label><br>
+            <input type="text" placeholder="number of passengers"  id="numPassengers" name="numPassengers" required><br><br>
+
+            <label><input type="checkbox" checked="checked" id="pets" name="pets"> כולל בעלי חיים </label><br><br>
+
+            <button type="submit">חפש טרמפ</button><br>
+        </div>
+    </form>
+
+</body>
+</html>
