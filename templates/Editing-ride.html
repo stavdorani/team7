@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EditYourRide</title>
+    <link rel = "icon" href = "../static/carIcon.svg" type = "image/x-icon">
     <link rel="stylesheet" href="../static/CSSproject.css">
 
       <!-- יצירת דף רפונסיבי -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    
-    
+    <center>  
+        <form class="forms" action="ServiceSelection.html" method="post">
 
+            <div class="container">
 
-<form action="action_page.php" method="post">
+                <div class="header">עריכת הטרמפ</div><br>
+                
+                <label for="rideDate"><b>תאריך הטרמפ</b></label><br>
+                <input type="date" id="rideDate" name="rideDate" required><br>
 
-    <div class="container">
+                <label for="destination"><b>היעד</b></label><br>
+                <input type="text" id="destination" name="destination" placeholder="בחר את היעד"><br>
 
-        <div class="header">עריכת הטרמפ</div><br>
-        
-        <label for="rideDate"><b>תאריך הטרמפ</b></label><br>
-        <input type="date" id="rideDate" name="rideDate" required><br>
+                <label for="leavingTime"><b>שעת יציאה</b></label><br>
+                <input type="time" id="leavingTime" name="leavingTime" ><br>
 
-        <label for="destination"><b>היעד</b></label><br>
-        <input type="text" id="destination" name="destination" placeholder="בחר את היעד"><br>
+                <label for="Maxpassengers"><b>כמות נוסעים מקסימלית</b></label><br>
+                <input type="text" id="Maxp" name="Maxp" ><br>
 
-        <label for="leavingTime"><b>שעת יציאה</b></label><br>
-        <input type="time" id="leavingTime" name="leavingTime" ><br>
+                <label for="price"><b>מחיר לנוסע</b></label><br>
+                <input type="text" id="price" name="price" placeholder=""><br>
 
-        <label for="Maxpassengers"><b>כמות נוסעים מקסימלית</b></label><br>
-        <input type="text" id="Maxp" name="Maxp" ><br>
+                <label for="FreeText"><b>טקסט חופשי</b></label><br>
+                <input type="text" id="FreeText" name="FreeText" required><br><br>
 
-        <label for="price"><b>מחיר לנוסע</b></label><br>
-        <input type="text" id="price" name="price" placeholder=""><br>
+                <label><input type="checkbox" checked="checked" id="pets" name="pets"> מותר בעלי חיים </label><br><br>
 
-        <label for="FreeText"><b>טקסט חופשי</b></label><br>
-        <input type="text" id="FreeText" name="FreeText" required><br><br>
-
-        <label><input type="checkbox" checked="checked" id="pets" name="pets"> מותר בעלי חיים </label><br><br>
-
-        <button type="submit"> שמור שינויים</button><br>
-        
-    </div>
-</form>
-
+                <button type="submit"> שמור שינויים</button><br>
+                
+            </div>
+        </form>
+    </center>
 
 </body>
 </html>

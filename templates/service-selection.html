@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChooseService</title>
+    <link rel = "icon" href = "../static/carIcon.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="../static/choose-ride-style.css">
+
+      <!-- יצירת דף רפונסיבי -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+
+    
+    <div class="container">
+      <div class="header">בחר.י שירות מבוקש</div><br>
+
+      <!-- התמונה שמעבירה אותך לדף לטפוס טרמם -->
+      <label for="catchRide"><b>לתפוס טרמפ</b></label><br>
+      <!-- לשנות לדף בוא נמצא לך טרמפ -->
+      <a href="find-ride.html">
+        <img alt="pic1" src="../static/find-ride-pic.svg" width="150" height="70">
+        </a><br>
+
+        <label for="OffersRide"><b>מציע טרמפ</b></label><br>
+        <a href="ride-details.html">
+          <img alt="pic2" src="../static/new-ride-pic.svg" width="150" height="70">
+        </a>
+
+        <h2>רק נשאר לבחור</h2>
+        <div class="table-wrapper">
+          <h2 id="tableInnerH">הטרמפים שלך</h2>
+          <table class="fl-table">
+              <tbody>
+              <tr>
+                <td>
+                  <input class="deleteRide" type="image" src="../static/delete.svg" />
+                </td>
+                <td>2</td>
+                <td>12:00 <br> 24/06/2022</td>
+                <td>רועי לוי</td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="editRide" type="image" src="../static/pencil.svg" />
+                  <input class="deleteRide" type="image" src="../static/delete.svg" />
+                  </td>
+                  <td>4</td>
+                  <td>20:00 <br> 25/06/2022</td>
+                  <td>אתה</td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="deleteRide" type="image" src="../static/delete.svg" />
+                  </td>
+                  <td>1</td>
+                  <td>15:15 <br> 27/06/2022</td>
+                  <td>משה דץ</td>
+              </tr>
+              <tbody>
+          </table>
+        </div>
+
+     </div>
+
+
+</body>
+</html>
