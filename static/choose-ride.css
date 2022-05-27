@@ -1,12 +1,18 @@
-*{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
+
 body{
-    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    font-family:segoe UI Light;
     -webkit-font-smoothing: antialiased;
-    background: rgba( 71, 147, 227, 1);
+    background-image: url("https://www.desktopbackground.org/p/2013/12/05/680424_light-blue-background-images-for-websites-hd_800x600_h.jpg");
+}
+h1{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(10, 10, 10);
+    padding: 30px 0; 
 }
 h2{
     text-align: center;
@@ -133,6 +139,47 @@ h2{
 }
 
 #tableInnerH{
-    
     background-color: rgb(42, 180, 201);
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "Logo Logo"
+    "navBar navBar"
+    "tableHeader tableHeader"
+    "table table"
+    "footer footer";
+}
+.AppLogo{
+    grid-area: Logo;
+}
+.tableHeader{
+    grid-area: tableHeader;
+}
+.table-wrapper{
+    grid-area: table;
+}
+.getRide{
+    grid-area: getRide;
+    margin-left: 20vw;
+    margin-right: auto;
+}
+.giveRide{
+    grid-area: giveRide;
+    margin-left: auto;
+    margin-right: 20vw;
+}
+.navBar{
+    grid-area: navBar;
+}
+.ridesTable{
+    grid-area: ridesTable;
+}
+.ridesH{
+    grid-area: ridesH;
+}
+.site-footer{
+    grid-area: footer;
 }

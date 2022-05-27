@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:segoe UI Light;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("https://www.desktopbackground.org/p/2013/12/05/680424_light-blue-background-images-for-websites-hd_800x600_h.jpg");
+}
+.container{
+    display: grid;
+    grid-template-columns:  100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "navBar"
+    "content1"
+    "footer";
+}
+
+.AppLogo{
+    grid-area: header;
+}
+.content{
+    grid-area: content1;
+}
+
+.site-footer{
+    grid-area: footer;
+}

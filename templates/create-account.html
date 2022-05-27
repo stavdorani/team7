@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,53 +7,69 @@
     <title>RidaShareSignIn</title>
     <link rel = "icon" href = "../static/carIcon.svg" type = "image/x-icon">
     <script defer src="../static/login-js.js"> </script>
-    <link rel="stylesheet" href="../static/CSSproject.css">
-    <!-- יצירת דף רפונסיבי -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/nabBar.js"></script>
+    <!--<link rel="stylesheet" href="../static/CSSproject.css">-->
+    <link rel="stylesheet" href="../static/page-template.css">
+    <link rel="stylesheet" href="../static/create-account.css">
 </head>
-
 <body>
-
-    <!-- לוגו הדף -->
-    <div class="AppLogo">
-        <h1>say WHAT?<br><span>SAY RIDE</span> </h1></div>
-
-
-    <!-- מילוי הפרטים האישיים בדף הכניסה -->
-    <!-- מכריח למלא את הפרטים החסרים -->
-    <center>
-        <form class="forms" action="service-selection.html" method="post">
-
-            <div class="container">
-
-                <div class="header">ברוכים המצטרפים עוד רגע והטרמפ מוכן</div><br>
-
-            <label for="uname"><b>שם משתמש</b></label><br>
-            <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-
-            <label for="email"><b>כתובת מייל</b></label><br>
-            <input type="email" id="fname" name="name" placeholder="כתוב את כתובת המייל שלך"><br>
-
-            <label for="phone"><b>מספר טלפון</b></label><br>
-            <input type="text" id="fname" name="name" placeholder=""><br>
-
-            <label for="date"><b>תאריך לידה</b></label><br>
-            <input type="text" id="fname" name="name" placeholder=""><br>
-
-            <label for="psw"><b>סיסמה</b></label><br>
-            <input type="password" placeholder="הקלד כאן" id="psw" name="psw" required><br><br>
-            <input type="checkbox" onclick="myFunction()">הצג סיסמה<br><br>
-
-            <label for="psw"><b>העלה תמונה תעודת סטודנט</b></label><br>
-            <form action="/todo">
-                <input type="file" id="myFile" name="filename"><br><br>
-                <button type="submit"> צור חשבון</button><br>
-            </form>
+    <div class="container">
+        <!-- Logo -->
+        <div class="AppLogo">
+            <h1>say WHAT?<br><span>SAY RIDE</span> </h1>
+        </div>
+        <!--End Logo-->
+        <!--navBar-->
+        <div class="navBar">
+            <div>
+                <a class="res_nav_heading">SiteName</a>
+                <div class="nav_btn">
+                    <hr/>
+                    <hr/>
+                    <hr/>
+                </div>
             </div>
+            <ul id="nav">
+                <li><a href="login-page.HTML">התנתק</a></li>
+                <li><a href="rides-history.html">היסטוריית נסיעות</a></li>
+                <li><a href="service-selection.html">דף הבית</a></li>
+            </ul>
+        </div><br>
+        <!--End NavBar-->
+        <!-- מילוי הפרטים האישיים בדף הכניסה -->
+        <!-- מכריח למלא את הפרטים החסרים -->
+        <form class="forms" action="service-selection.html" method="post">
+            <div class="header">ברוכים המצטרפים עוד רגע והטרמפ מוכן<br>
+            <label for="uname" class="formsLabel"><b>שם משתמש</b></label><br>
+            <input type="text" class="formsInputs" placeholder="Enter Username" name="uname" required><br><br>
+            <label for="email" class="formsLabel"><b>כתובת מייל</b></label><br>
+            <input class="formsInputs" type="email" id="fname" name="name" placeholder="כתוב את כתובת המייל שלך"><br>
+            <label for="phone" class="formsLabel"><b>מספר טלפון</b></label><br>
+            <input type="text" class="formsInputs" id="fname" name="name" placeholder=""><br>
+            <label for="date" class="formsLabel"><b>תאריך לידה</b></label><br>
+            <input type="text" class="formsInputs" id="fname" name="name" placeholder=""><br>
+            <label for="psw" class="formsLabel"><b>סיסמה</b></label><br>
+            <input type="password" class="formsInputs" placeholder="הקלד כאן" id="psw" name="psw" required><br><br>
+            <input type="checkbox" class="formsInputs" onclick="myFunction()">הצג סיסמה<br><br>
+            <label for="psw" class="formsLabel"><b>העלה תמונה תעודת סטודנט</b></label><br>
+            <input type="file" class="formsInputs" id="myFile" name="filename"><br><br>           
+            <button type="submit"> צור חשבון</button><br>
         </form>
-    </center>
-    
-
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container-fluid">
+                <div class="footer nav navbar navbar-full bg-faded">
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <p class="whitetext">Created by <strong>Team7</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Site footer -->
+    </div>   
 </body>
-
 </html>
