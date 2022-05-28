@@ -7,9 +7,9 @@ body{
     padding: 0;
     margin: 0;
     -webkit-font-smoothing: antialiased;
-    background-image: url("https://www.desktopbackground.org/p/2013/12/05/680424_light-blue-background-images-for-websites-hd_800x600_h.jpg");
-
+    background-image: url("../static/Pics and Icons/background1.jpg");
 }
+
 h1{
     text-align: center;
     font-size: 18px;
@@ -144,7 +144,7 @@ h2{
 
 #tableInnerH{
     
-    background-color: rgb(42, 180, 201);
+    background-color: rgba(43, 109, 153, 0.896);
 }
 .container{
     display: grid;
@@ -163,13 +163,13 @@ h2{
 }
 .getRide{
     grid-area: getRide;
-    margin-left: 20vw;
+    margin-left: 25vw;
     margin-right: auto;
 }
 .giveRide{
     grid-area: giveRide;
     margin-left: auto;
-    margin-right: 20vw;
+    margin-right: 25vw;
 }
 .navBar{
     grid-area: navBar;

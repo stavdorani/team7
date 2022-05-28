@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family:segoe UI Light;
     -webkit-font-smoothing: antialiased;
-    background-image: url("https://www.desktopbackground.org/p/2013/12/05/680424_light-blue-background-images-for-websites-hd_800x600_h.jpg");
+
 }
 .container{
     display: grid;
@@ -15,14 +15,27 @@ body{
     "content1"
     "footer";
 }
-
 .AppLogo{
     grid-area: header;
 }
 .content{
     grid-area: content1;
 }
-
 .site-footer{
     grid-area: footer;
 }
+/* 
+תמונה קופצת */
+@keyframes jump {
+    0%   {transform: translate3d(0,10%,0) scale3d(1,1,1);} 
+     40%  {transform: translate3d(0,10%,0) scale3d(1,1,1);} 
+    100% {transform: translate3d(0,0%,0) scale3d(1,1,1);} 
+ }
+ .jump {
+   transform-origin: 50% 50%;
+   animation: jump .50s linear alternate infinite;
+ }
+
+.header {text-align: center;}
+.header * {margin: 2em 2em 0; text-align: center; vertical-align: middle; font-family: sans-serif, sans; font-weight: bold;} 
+

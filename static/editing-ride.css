@@ -1,3 +1,7 @@
+body{
+    background-image: url("../static/Pics and Icons/background1.jpg");
+
+}
 .container{
     display: grid;
     grid-template-columns:  100%;
@@ -9,9 +13,7 @@
     "footer";
 }
 
-.forms{
-    grid-area: form;
-}
+
 .AppLogo{
     grid-area: header;
 }
