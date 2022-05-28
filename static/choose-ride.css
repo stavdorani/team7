@@ -1,11 +1,4 @@
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family:segoe UI Light;
-    -webkit-font-smoothing: antialiased;
-    background-image: url("../static/Pics and Icons/background1.jpg");
-}
 h1{
     text-align: center;
     font-size: 18px;

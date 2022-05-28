@@ -3,11 +3,14 @@ body {
 	background-image: url("../static/Pics and Icons/background1.jpg");
 	background-repeat: no-repeat;
     margin: 0;
+	padding: 0;
+	font-family:segoe UI Light;
+	-webkit-font-smoothing: antialiased;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	width:100%;
+	width: auto;
 	height:100%;
 }
 
@@ -202,7 +205,7 @@ hr{
 	.forms{
 		width: 66%;
 	}
-	#email,#uname,#psw,#FreeText,#price,#leavingTime,#txtDate,#destination,#Maxp,#OriginAddress,#numPassengers{
+	#email,#uname,#psw,#FreeText,#price,#leavingTime,#txtDate,#destination,#Maxp,#OriginAddress,#numPassengers,#phone,#date,#myFile{
 		width: 66%;
 	}
 }
@@ -253,7 +256,7 @@ hr{
 	.forms{
 		width: 66%;
 	}
-	#email,#uname,#psw,#FreeText,#price,#leavingTime,#txtDate,#destination,#Maxp,#OriginAddress,#numPassengers{
+	#email,#uname,#psw,#FreeText,#price,#leavingTime,#txtDate,#destination,#Maxp,#OriginAddress,#numPassengers,#phone,#date,#myFile{
 		width: 66%;
 	}
 }
