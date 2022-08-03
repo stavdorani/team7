@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% set title='RidaShareSignIn' %}
+<link rel="stylesheet" href="{{url_for('create_account.static',filename='css/create-account.css')}}">
+{% block title %}{{ title }} Page {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- מילוי הפרטים האישיים בדף הכניסה -->
+        <!-- מכריח למלא את הפרטים החסרים -->
+        <form class="forms" action="/create_account" method="post">
+            <div class="header">ברוכים המצטרפים עוד רגע והטרמפ מוכן</div><br><br>
+            <label for="uname"><b>שם משתמש</b></label><br>
+            <input type="text" name="uname" id="uname" minlength="2" maxlength="50" placeholder="הזן שם משתמש"  required><br><br>
+            <label for="email"><b>כתובת מייל</b></label><br>
+            <input type="email" name="email" id="email" placeholder="כתוב את כתובת המייל שלך" required><br>
+            <label for="phone"><b>מספר טלפון</b></label><br>
+            <input type="tel" pattern="[0-9]{3}[0-9]{2}[0-9]{5}" name="phone" id="phone" required><br>
+            <label for="date"><b>תאריך לידה</b></label><br>
+            <input type="date" name="date" id="date"  required><br>
+            <label for="psw"><b>סיסמה</b></label><br>
+            <input type="password" class="formsInputs" placeholder="הזן סיסמה" id="psw" name="psw" minlength="6" maxlength="10" required><br>
+            <input type="checkbox" class="formsInputs" onclick="myFunction()">הצג סיסמה<br><br>
+            <label for="psw"><b>העלה תמונה תעודת סטודנט</b></label><br>
+            <form action="#action#">
+            <input type="file" name="myFile" id="myFile" name="filename"><br><br>
+             <button type="submit"> צור חשבון</button><br>
+            </form>
+        </form>
+    </div>   
+
+
+{% endblock %}

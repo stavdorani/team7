@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% set title='ChooseService' %}
+
+{% block title %}{{ title }} Page {% endblock %}
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{url_for('service_selection.static', filename='css/service-selection.css')}}"/>
+{% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="ridesH">
+      <h1 class="header">בחר.י שירות מבוקש</h1><br>
+    </div><br>
+    <div class="getRide">
+      <!-- התמונה שמעבירה אותך לדף לטפוס טרמם -->
+      <label id="cathRide" for="catchRide"><b>לתפוס טרמפ</b></label><br>
+      <!-- לשנות לדף בוא נמצא לך טרמפ -->
+        <a href="/find_ride">
+            <img src="{{ url_for('service_selection.static', filename='media/img/new-ride-pic.svg') }}" alt="pic1"  width="150" height="70"/>
+        </a>
+    </div>
+    <div class="giveRide">
+      <label id="OffersRide" for="OffersRide"><b>מציע טרמפ</b></label><br>
+      <a href="/ride_details">
+            <img  src="{{url_for('service_selection.static', filename='media/img/find-ride-pic.svg')}}" alt="pic2" width="150" height="70">
+      </a>
+    </div>
+    <div class="ridesTable">
+      <!-- <h2>רק נשאר לבחור</h2> --><br><br>
+      <div class="table-wrapper">
+        <h2 id="tableInnerH">הטרמפים שלך</h2>
+        <table class="fl-table">
+            <tbody>
+            <tr>
+              <td>
+                <input class="deleteRide" type="image" src="{{url_for('service_selection.static', filename='media/img/delete.svg')}}" onclick="deleteRow(this);">
+              </td>
+              <td>2</td>
+              <td>12:00 <br> 24/06/2022</td>
+              <td>רועי לוי</td>
+            </tr>
+            <tr>
+              <td>
+                 <a href="/editing_ride">
+                  <input class="editRide" type="image" src="{{url_for('service_selection.static', filename='media/img/pencil.svg')}}"/>
+                 </a>
+                <input class="deleteRide" type="image" src="{{url_for('service_selection.static', filename='media/img/delete.svg')}}" onclick="deleteRow(this);">
+                </td>
+                <td>4</td>
+                <td>20:00 <br> 25/06/2022</td>
+                <td>אתה</td>
+            </tr>
+            <tr>
+              <td>
+                <input class="deleteRide" type="image" src="{{url_for('service_selection.static', filename='media/img/delete.svg')}}" onclick="deleteRow(this);">
+                </td>
+                <td>1</td>
+                <td>15:15 <br> 27/06/2022</td>
+                <td>משה דץ</td>
+            </tr>
+            <tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

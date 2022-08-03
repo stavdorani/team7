@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% set title='FindARide' %}
+<link rel="stylesheet" href={{url_for('find_ride.static', filename='css/find-ride.css')}}>
+{% block title %}{{ title }} Page {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href={{url_for('find_ride.static', filename='css/find-ride.css')}}>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form class="forms" action="/choose_ride" method="post">
+            <div class="header">בואו נמצא לך טרמפ!</div><br><br>    
+            <label for="date"><b>תאריך טרמפ רצוי</b></label><br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <input type="date" id="txtDate" name="txtDate" required><br><br>
+            <label for="OriginAddress"><b>כתובת מוצא</b></label><br>
+            <input type="text" min="1" placeholder="הזן כתובת מוצא" id="OriginAddress" name="OriginAddress" required><br><br>
+            <label for="destination"><b>כתובת יעד</b></label><br>
+            <input type="text" min="1" placeholder="הזן כתובת יעד"  id="destination" name="destination" required><br><br>
+            <label for="leavingTime"><b>שעת יציאה</b></label><br>
+            <input type="time" id="leavingTime" name="leavingTime" required ><br><br>
+            <label for="numPassengers"><b>מספר נוסעים</b></label><br>
+            <input type="number"  min="1" max="4" placeholder="מספר נוסעים"  id="numPassengers" name="numPassengers" required><br><br>
+            <label><input type="checkbox" checked="checked" id="pets" name="pets"> כולל בעלי חיים </label><br><br>
+            <button type="submit">חפש טרמפ</button><br>       
+        </form>
+    </div>
+{% endblock %}

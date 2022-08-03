@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% set title='Welcome' %}
+
+{% block title %}{{ title }} Page {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href={{url_for('login_page.static', filename='css/login-page.css')}}>
+{% endblock %}
+
+{% block content %}
+    <!--  מילוי פרטים אישיים להתחברות  -->
+    <div class="container">
+        <form class="forms" action="/login_page" method="post">
+            <label for="uname" class="formsLabel"><b>שם משתמש</b></label><br>
+            <input type="text" class="formsInputs" placeholder="הזן שם משתמש" id="uname" name="uname" required><br><br>
+            <label for="psw" class="formsLabel"><b>סיסמה</b></label><br>
+            <input type="password" class="formsInputs" placeholder="הזן סיסמה" id="psw" name="psw" required><br>
+            <input type="checkbox" class="formsInputs" onclick="myFunction()">הצג סיסמה<br><br>
+            <button type="submit">התחבר</button><br>
+            <label class="formsLabel"><input type="checkbox" checked="checked" id="remember" name="remember"> זכור אותי </label><br><br>    
+            <span class="psw">שכחת סיסמה? <a href="/reset_password">לחץ כאן</a></span><br>
+            <span class="psw">משתמש חדש? <a href="/create_account">לחץ כאן</a></span>
+        </form>
+    </div>
+{% endblock %}

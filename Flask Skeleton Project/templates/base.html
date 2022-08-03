@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="heb">
+<head>
+{% block page_head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel = "icon" href ="{{url_for('static',filename='media/img/carIcon.svg')}}" type = "image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/page-template.css')}}">
+{% endblock %}
+{% block page_head_css %}{% endblock %}
+</head>
+<body>
+
+    {% include('header_and_nav.html') %}
+
+    {% block content %}
+        {% block content_links %}{% endblock %}
+            <h1>Message from BASE Page!</h1>
+    {% endblock %}
+
+    {% include('footer.html') %}
+
+    <script defer src={{url_for('static', filename='js/nabBar.js')}}></script>
+    <script defer src={{url_for('static', filename='js/login-js.js')}}></script>
+</body>
+</html>

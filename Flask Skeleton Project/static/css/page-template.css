@@ -1,0 +1,346 @@
+
+body {
+	background-image: url("Icons/background1.jpg");
+	background-repeat: no-repeat;
+    margin: 0;
+	padding: 0;
+	font-family:segoe UI Light;
+	-webkit-font-smoothing: antialiased;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: auto;
+	height:100%;
+}
+
+.header{
+
+	font-weight: bold;
+	font-size: large;
+}
+.forms{
+    grid-area: form;
+    border: 3px solid rgba(237, 242, 247, 0.89);
+    background: #ccdae491;
+    /* border-radius:2cm;  */
+    width:15cm;
+    margin: auto;
+	padding: 14px 40px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=time], input[type=checkbox], input[type=number], input[type=tel], input[type=file]   {
+	width: 50%;
+	padding: 14px 40px;
+	margin: 2px auto;
+	display: inline-block;
+	border:  2px solid #2463b6;
+	box-sizing: border-box;
+	top: 50%;
+	left: 50%;
+	border-radius:10px;
+	background: #191919;
+	text-align: center;
+	display: block;
+	color: rgb(34, 74, 168);
+	background: #ffffff89;
+	font-weight: bold;
+  }
+
+button {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #05469c;
+	font-weight: bold;
+	padding: 14px 40px;
+	outline: none;
+	color: rgb(34, 74, 168);
+	border-radius: 25px;
+	transition: 0.25s;
+	cursor: pointer;
+	background: #ffffff;
+	font-size: large;
+	} 
+
+
+	
+/* CSS Document */
+a {
+	color: #333;
+}
+/* ul, li, a  arranging and styling*/ 
+#nav {
+	padding: 7px 0px 0px;
+	background: #306ea4 repeat-x 0 -110px;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0, .4);
+	box-shadow: 0 1px 30px rgba(0,0,0, .4);
+	width:100%;
+  	font-family:segoe UI Light;
+}
+#nav li {
+	margin: 0 5px;
+	padding: 0 0 8px;
+    padding-left: 18vw;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+#nav a {
+	font-weight: bold;
+	color: rgb(225, 245, 255) ;
+	text-decoration: none;
+	display: block;
+	padding:  8px 20px;
+	border-radius: 10px;
+	text-shadow: 0 1px 1px rgba(0,0,0, .3);
+}
+
+/* main level link hover */
+
+#nav li:hover > a {
+	background: rgb(225, 245, 255) repeat-x 0 -40px;
+	color: #306ea4;
+	border-top: solid 1px #f8f8f8;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	text-shadow: 0 1px 0 rgba(255,255,255, 1);
+}
+
+/* sub levels link hover *//*
+
+/* clearfix */
+
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] #nav {
+	display: block;
+}
+
+* html #nav {
+	height: 2%;
+}
+
+
+.res_nav_heading{
+	display: inline;
+	margin-left: 10px;
+	font-size: 2.1875em;
+	border-radius: 1%;
+	text-shadow: 0 1px 1px rgba(0,0,0, .3);
+	cursor:default;
+
+}
+
+
+hr{
+	height: 3px;
+	background-color: #fff;
+	width: 20px;
+	border: none;
+}
+
+
+.nav_btn{
+	display: inline;
+	width: 5%;
+	cursor: pointer;
+	padding: 2px;
+}
+
+
+@media screen and (min-width: 641px){
+
+.res_nav_heading{
+	display: none;
+}
+.nav_btn{
+	display: none;
+}
+}
+
+@media screen and (max-width: 640px) and (min-width: 481px){
+	.body{
+		width: 100%;
+		height: 60px;
+		background-color:#5aade8;
+	}
+	.res_nav_heading{
+		line-height: 1.6;
+		color: #fff;
+		padding: 5px;
+		text-shadow: 0 1px 1px rgba(0,0,0, .3);
+	}
+	.res_nav_heading:hover{
+		color: rgba(255,255,255,0.7);
+	}
+	.nav_btn{
+		float: right;
+		margin: 1.2% 2% 0px 0px;
+	}
+	.nav_btn:hover hr{
+		background-color: rgba(255,255,255,0.7);
+	}
+
+	#nav{
+		margin-top:4px;
+	}
+
+	#nav li{
+		float: none;
+	}
+	.forms{
+		width: 66%;
+	}
+	#email,#uname,#psw,#FreeText,#price,#leavingTime,#txtDate,#destination,#Maxp,#OriginAddress,#numPassengers,#phone,#date,#myFile{
+		width: 66%;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+.body{
+		width: 100%;
+		height: 60px;
+		font-family: segoe;
+		box-shadow:0px 0px 0px #888;
+	}
+
+	.res_nav_heading{
+		color: #ffffff;
+		line-height: 1.3;
+		text-shadow: 0 1px 1px rgba(0,0,0, .3);
+	}
+	.nav_btn{
+		float: left;
+		margin: 0.7% 0px 0px 2%;
+	}
+	hr{
+		background-color: #ffffff;
+	}
+
+	#nav{
+		margin-top:4px;
+	}
+
+	#nav li{
+		float: none;
+	}
+
+	#nav ul {
+		display: none;
+		top: 50px;
+		background: #ffffff;
+		position:static;
+		margin-left: 10px;
+		border-radius: 10px;
+		border: none;
+		-webkit-box-shadow: 0 0px 0px rgba(0,0,0, .3);
+		-moz-box-shadow: 0 0px 0px rgba(0,0,0, .3);
+		box-shadow: 0 0px 0px rgba(0,0,0, .3);
+		z-index: 0;
+	}
+	.forms{
+		width: 66%;
+	}
+	#email,#uname,#psw,#FreeText,#price,#leavingTime,#txtDate,#destination,#Maxp,#OriginAddress,#numPassengers,#phone,#date,#myFile{
+		width: 66%;
+	}
+}
+
+/* headerr */
+/* === LOGO STYLE  === */
+.AppLogo h1 {
+    text-transform: capitalize;
+	font-size:xx-large;
+	border: 3px solid rgba(255, 255, 255, 0.652);
+    background: #ffffff49;
+ /* border-radius:2cm;  */
+	width:8cm;
+	margin: auto;
+}
+.AppLogo h1::after {
+position: absolute;
+left: 0;
+width: 60px;
+height: 5px;
+content: "";
+left:50%;
+margin-left:-30px;
+background-color: #1e00c5;
+}
+/* עיצוב הכתוב התחתון בלוגו */
+.AppLogo h1 span {
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 4px;
+line-height: 1em;
+padding-left: 0.25em;
+color: rgba(0, 0, 0, 0.4);
+padding-bottom: 10px;
+}
+/* מרכוז הכתוב בלוגו */
+.AppLogo h1 {
+text-align:center;
+}
+ /* מיקום הקו הכחול בלוגו */
+ .AppLogo h1:before {
+    left:50%; margin-left:-30px;
+	
+  }
+  
+
+
+/* footer */
+
+/*DO NOT EDIT BELOW*/
+
+.footer {
+    background-color: rgba(67, 102, 142, 0.659);
+    height:auto;
+	width: auto;
+    padding: 25px;
+	position:relative;	
+	bottom: -2.5vh;
+  }
+  .whitetext {
+    color:white;
+    margin: 0px;
+    padding:0px;
+	line-height: 20px;
+
+  }
+  
+  /* שקשוק תמונה */
+button:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+ 

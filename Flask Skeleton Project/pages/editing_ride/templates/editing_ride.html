@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% set title='EditYourRide' %}
+
+{% block title %}{{ title }} Page {% endblock %}
+{% block page_head_css %}
+    <link rel="stylesheet" href={{url_for('editing_ride.static', filename='css/editing-ride.css')}}>
+{% endblock %}
+{% block content %}
+
+
+    <div class="container">
+
+        <form class="forms" name="edit_ride" action="service_selection" method="post">
+            <div class="header">עריכת הטרמפ</div><br><br>
+            <label for="rideDate"><b>תאריך הטרמפ</b></label><br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <input type="date" id="txtDate" name="txtDate" required><br>
+            <label for="destination"><b>היעד</b></label><br>
+            <input type="text" minlength="2" maxlength="50" id="destination" name="destination" placeholder="בחר את היעד"><br>
+            <label for="leavingTime"><b>שעת יציאה</b></label><br>
+            <input type="time" id="leavingTime" name="leavingTime" required><br>
+            <label for="Maxpassengers"><b>כמות נוסעים מקסימלית</b></label><br>
+            <input type="number"   min="1" max="4" id="Maxp" name="Maxp" required><br>
+            <label for="price"><b>מחיר לנוסע</b></label><br>
+            <input type="number" id="price" min="1"  name="price" required><br>
+            <label for="FreeText"><b>טקסט חופשי</b></label><br>
+            <input type="text" id="FreeText" name="FreeText" minlength="2" maxlength="255"><br><br>
+            <label><input type="checkbox" checked="checked" id="pets" name="pets"> מותר בעלי חיים </label><br><br>
+            <button type="submit"> שמור שינויים</button><br>
+        </form>
+    </div>
+{% endblock %}

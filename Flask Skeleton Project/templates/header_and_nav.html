@@ -1,0 +1,25 @@
+<!-- Logo -->
+<div class="AppLogo">
+    <h1>say WHAT?<br><span>SAY RIDE</span> </h1>
+</div>
+<!--End Logo-->
+<!--navBar-->
+<div class="navBar">
+    <div>
+        <a class="res_nav_heading">תפריט</a>
+        <div class="nav_btn">
+            <hr/>
+            <hr/>
+            <hr/>
+        </div>
+    </div>
+    <ul id="nav">
+        {% if session['user_name'] %}
+            <li><a href="/log_out" target="_self">התנתק</a></li>
+        {% else %}
+            <li><a href="/login_page" target="_self">התחברות</a></li>
+        {% endif %}
+        <li><a href="/rides-history">היסטוריית נסיעות</a></li>
+        <li><a href="/service_selection">דף הבית</a></li>
+    </ul>
+</div>

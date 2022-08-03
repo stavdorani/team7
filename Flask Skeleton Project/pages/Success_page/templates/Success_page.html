@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% set title='YourRideInTheSys' %}
+
+{% block title %}{{ title }} Page {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href={{url_for('Success_page.static', filename='success-page.css')}}>
+{% endblock %}
+
+{% block content %}
+</head>
+<body>   
+    <div class="container">
+        <div class="content">
+            <div class="header">הטרמפ נוצר בהצלחה!</div><br><br>
+            <center><img class="jump" width="150" height="200" src="{{url_for('Success_page.static', filename='media/success1.svg')}}" alt="" /></center><br>
+            <button class="button" onclick="document.location='/service_selection'">דף הבית</button><br>
+        </div>
+    </div>
+{% endblock %}
